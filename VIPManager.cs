@@ -11,9 +11,9 @@ using System.Net;
 
 namespace Oxide.Plugins
 {
-    [Info("ToroVIPManager", "Yac Vaguer", "1.0.1")]
+    [Info("VIPManager", "Yac Vaguer", "1.0.1")]
     [Description("Manage VIP status with expiration")]
-    class ToroVIPManager : RustPlugin
+    class VIPManager : RustPlugin
     {
         private Dictionary<ulong, VIPEntry> activeVIPs = new Dictionary<ulong, VIPEntry>();
         private string dataFile = Path.Combine(Interface.Oxide.DataDirectory, "VIPManager/active-vip");
